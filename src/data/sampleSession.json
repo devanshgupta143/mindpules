@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "blinksPerMin": 12,
+    "smileScore": 0.24,
+    "avgPitchHz": 178,
+    "headY": 0.4
+  },
+  "calm": {
+    "durationSec": 60,
+    "blinksPerMin": 14,
+    "smileScore": 0.22,
+    "avgPitchHz": 182,
+    "headY": 0.41,
+    "slouchScore": "Upright, steady posture"
+  },
+  "pressure": {
+    "durationSec": 60,
+    "blinksPerMin": 31,
+    "smileScore": 0.05,
+    "avgPitchHz": 234,
+    "headY": 0.49,
+    "slouchScore": "Head dropped; shoulders slouched",
+    "interruptions": [
+      {
+        "sec": 20,
+        "type": "follow-up",
+        "description": "Interviewer interrupted with a request for a specific example."
+      },
+      {
+        "sec": 40,
+        "type": "challenge",
+        "description": "Interviewer challenged the candidate's latency estimate."
+      }
+    ]
+  },
+  "timeline": [
+    { "sec": 0, "calmPitch": 180, "pressurePitch": 184, "calmBlinks": 0, "pressureBlinks": 0 },
+    { "sec": 10, "calmPitch": 182, "pressurePitch": 190, "calmBlinks": 2, "pressureBlinks": 3 },
+    { "sec": 20, "calmPitch": 181, "pressurePitch": 248, "calmBlinks": 1, "pressureBlinks": 7, "interruption": "follow-up" },
+    { "sec": 30, "calmPitch": 183, "pressurePitch": 220, "calmBlinks": 2, "pressureBlinks": 5 },
+    { "sec": 40, "calmPitch": 180, "pressurePitch": 255, "calmBlinks": 1, "pressureBlinks": 8, "interruption": "challenge" },
+    { "sec": 50, "calmPitch": 182, "pressurePitch": 228, "calmBlinks": 2, "pressureBlinks": 6 },
+    { "sec": 60, "calmPitch": 184, "pressurePitch": 215, "calmBlinks": 2, "pressureBlinks": 4 }
+  ],
+  "transcript": "I handled the distributed architecture by implementing asynchronous job queues in RabbitMQ. However, when latency peaked, we had to rethink our database indexing strategy under severe production time constraints."
+}
